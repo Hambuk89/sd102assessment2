@@ -1,0 +1,200 @@
+<!-- This is the DOCTYPE declaration for HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenfit Studio</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="payment">
+        <!-- top-bar starts here. -->
+        <header class="top-bar">
+            <img src="./images/Simple-logo.png" alt="Zenfit Studio Logo" class="logo" onclick="location.href='index.html';" style="cursor: pointer;">
+            <h1 class="title" onclick="location.href='index.html';" style="cursor: pointer;">ZENFITSTUDIO</h1>
+            <nav class="navigation">
+                <a href="index.html">HOME</a>
+                <a href="aboutus.html">ZENFIT</a>
+                <a href="classes.html">CLASSES</a>
+                <a href="membership.html">MEMBERSHIP</a>
+                <a href="shop.html">SHOP</a>
+                <a href="blog.html">BLOG</a>
+                <a href="contactus.html">CONTACT US</a>
+            </nav>
+        </header>
+        <!-- top-bar ends here. -->
+        <!-- Payment section starts here. -->
+        <div class="section">
+          <div class="container">
+            <div class="title2">Joining Membership</div>
+            <div class="description">Review and adjust your items</div>
+          </div>
+          <img class="vector-200" src="vector-2000.svg" />
+        </div>
+        <div class="products">
+          <div class="container2">
+            <img class="image-container" src="./images/Simple-logo.png" />
+            <div class="container3">
+              <div class="title3">MEMBERSHIP OPTION</div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="row">
+              <div class="card">
+                <img class="image-container2" src="./images/blog-section.jpg" />
+                <div class="text-content">
+                  <div class="title4">ZEN START - $11.99 Per Week</div>
+                  <div class="subtitle">ACCESS 24/7</div>
+                </div>
+              </div>
+              <div class="card">
+                <img class="image-container2" src="./images/service-HIIT.jpg" />
+                <div class="text-content">
+                  <div class="title4">ZEN PREMIUM - $18.99 Per Week</div>
+                  <div class="subtitle">HIIT SESSION</div>
+                </div>
+              </div>
+              <div class="card">
+                <img class="image-container2" src="./images/service-pilates.JPG" />
+                <div class="text-content">
+                  <div class="title4">ZEN FLEX - $49.99 Per Week</div>
+                  <div class="subtitle">BEST PICK OF ZENFIT</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="selection">
+              <div class="title5">Membership Options</div>
+              <div class="chip-group"> 
+                <div class="chip" onclick="selectChip(this)" style="background-color: #FF5722;">
+                  <div class="text">ZEN START</div>
+                </div>
+                <div class="chip" onclick="selectChip(this)" style="background-color: #FF5722;">
+                  <div class="text">ZEN PREMIUM</div>
+                </div>
+                <div class="chip" onclick="selectChip(this)" style="background-color: #FF5722;">
+                  <div class="text">ZEN FLEX</div>
+                </div>
+              </div>
+
+              <script>
+                function selectChip(selectedChip) {
+                  const chips = document.querySelectorAll('.chip');
+                  chips.forEach(chip => {
+                    chip.style.backgroundColor = '#FF5722'; // Reset all chips to original color
+                  });
+                  selectedChip.style.backgroundColor = '#4CAF50'; // Highlight the selected chip
+                }
+              </script>
+            </div>
+            <div class="container4">
+              <div class="title2">Personal Details</div>
+              <div class="description">Sign up for a membership account</div>
+            </div>
+            <div class="list">
+              <div class="row2">
+                <div class="input">
+                  <div class="title6">Full Name</div>
+                    <div class="textfield">
+                    <input type="text" class="text2" placeholder="Enter your full name">
+                    </div>
+                  <div class="info">As per ID proof</div>
+                </div>
+                <div class="input">
+                  <div class="title6">Email</div>
+                  <div class="textfield">
+                    <input type="text" class="text2" placeholder="Enter your email">
+                  </div>
+                  <div class="info">Receive membership confirmation</div>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="input">
+                  <div class="title6">Phone Number</div>
+                  <div class="textfield">
+                    <input type="text" class="text2" placeholder="Enter your phone number">
+                  </div>
+                  <div class="info">For communication</div>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="input2">
+                  <div class="title6">Postal Address</div>
+                  <div class="textfield">
+                    <input type="text" class="text2" placeholder="Enter your Address">
+                  </div>
+                  <div class="info">For delivery at your door</div>
+                </div>
+              </div>
+            </div>
+            <img class="vector-2002" src="vector-2001.svg" />
+          </div>
+          <div class="container5">
+            <div class="title2">Payment Details</div>
+            <div class="description">Securely pay for your booking</div>
+          </div>
+          <div class="list2">
+            <div class="row2">
+              <div class="input">
+                <div class="title6">Card Number</div>
+                <div class="textfield">
+                  <input type="text" class="text2" placeholder="Enter your card number">
+                </div>
+                <div class="info">Secure payment processing</div>
+              </div>
+              <div class="input">
+                <div class="title6">Card Name</div>
+                <div class="textfield">
+                  <input type="text" class="text2" placeholder="Enter your card name">
+                </div>
+                <div class="info">Secure payment processing</div>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="input">
+                <div class="title6">CVV</div>
+                <div class="textfield">
+                  <div class="text2">Enter CVV</div>
+                </div>
+                <input type="text" class="text2" placeholder="Enter your CVV">
+              </div>
+              <div class="input">
+                <div class="title6">Expiry Date</div>
+                <div class="textfield">
+                  <input type="text" class="text2" placeholder="Enter expiry date">
+                </div>
+                <div class="info">Format: MM/YY</div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <div class="primary">
+              <div class="title7">Confirm Payment</div>
+            </div>
+          </div>
+          <img class="vector-2003" src="vector-2002.svg" />
+        </div>
+        <!-- Payment section ends here. -->
+        <!-- footer-section starts here. -->
+        <footer class="footer-section">
+            <div class="footer-content">
+                <a href="tab" class="footer-link" onclick="location.href='index.html';" style="cursor: pointer;">© 2025 Zenfit Studio. All Rights Reserved.</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/facebook-logo.png" alt="Facebook Icon" class="social-icon">
+                </a>
+                <a href="https://www.twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter-logo.png" alt="Twitter Icon" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/instagram-logo.png" alt="Instagram Icon" class="social-icon">
+                </a>
+            </div>
+        </footer>
+        <!-- footer-section ends here. -->
+    </div>
+  </body>
+  </html>        
